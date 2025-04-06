@@ -2,12 +2,13 @@ function generatePoem(event) {
   event.preventDefault();
 
   let poemField = document.querySelector("#poem");
+  poemField.classList.remove("hidden");
   poemField.innerHTML = "Getting your poem...please wait.";
   let instructionInput = document.querySelector("#instruction");
   let apiKey = "f86d964a4t362c8065oa46bbf2320366";
   let context =
     "You are an English historian and you know how to write beautiful poetry.";
-  let prompt = `Generate a short poem in English about ${instructionInput.value}. Separate each line with a line break.`;
+  let prompt = `Generate a short poem in English about ${instructionInput.value}. Separate each line with a <br>. Sign the end of the poem with "<strong>Poem by SheCodes AI ❤️</strong>"`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(showPoem);
