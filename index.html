@@ -7,34 +7,37 @@
     <title>AI English Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI English Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>the poem will show here.</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/MichelleMOU86" target="_blank"
-        >Michelle Wilson</a
-      >. It is open-sourced on
-      <a
-        href="https://github.com/MichelleMOU86/english-poem-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted here on Netlify.
-    </footer>
-    <script src="src/index.js"></script>
+    <div class="container">
+      <header>
+        <h1>AI English Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem."
+            autofocus
+            required
+            autocomplete="off"
+            class="instruction"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">the poem will show here.</div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/MichelleMOU86" target="_blank"
+          >Michelle Wilson</a
+        >. It is open-sourced on
+        <a
+          href="https://github.com/MichelleMOU86/english-poem-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted here on Netlify.
+      </footer>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
